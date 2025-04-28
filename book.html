@@ -8,7 +8,7 @@
     <meta content="" name="description" />
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon" />
+    <!-- <link href="img/favicon.ico" rel="icon" /> -->
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -41,6 +41,14 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
+    
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+      (function() {
+        emailjs.init("7cW47dMGOtOw8QFIv");
+      })();
+    </script>
   </head>
 
   <body>
@@ -115,9 +123,6 @@
         class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0"
       >
         <a href="" class="navbar-brand p-0">
-          <!-- <h1 class="text-primary m-0">
-            <i class="fa fa-map-marker-alt me-3"></i>Tourist
-          </h1> -->
           <img src="./img/LogoNew.png" alt="Logo" />
         </a>
         <button
@@ -171,8 +176,6 @@
     </div>
     <!-- Navbar & Hero End -->
 
-    <!-- NEW SECTION -->
-
     <!-- Booking Section Start -->
     <div class="container-xxl py-5">
       <div class="container">
@@ -188,24 +191,17 @@
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
             <div class="package-item">
               <div class="overflow-hidden">
-                <img
-                  class="img-fluid"
-                  src="img/hotel1.jpg"
-                  alt="Luxury Hotel"
-                />
+                <img class="img-fluid" src="img/hotel1.jpg" alt="Luxury Hotel">
               </div>
               <div class="d-flex border-bottom">
                 <small class="flex-fill text-center border-end py-2"
-                  ><i class="fa fa-map-marker-alt text-primary me-2"></i
-                  >Pune</small
+                  ><i class="fa fa-map-marker-alt text-primary me-2"></i>Pune</small
                 >
                 <small class="flex-fill text-center border-end py-2"
-                  ><i class="fa fa-calendar-alt text-primary me-2"></i>5
-                  Star</small
+                  ><i class="fa fa-calendar-alt text-primary me-2"></i>5 Star</small
                 >
                 <small class="flex-fill text-center py-2"
-                  ><i class="fa fa-user text-primary me-2"></i>Swimming
-                  Pool</small
+                  ><i class="fa fa-user text-primary me-2"></i>Swimming Pool</small
                 >
               </div>
               <div class="text-center p-4">
@@ -221,10 +217,7 @@
                   Experience world-class luxury with our premium accommodations
                   and services.
                 </p>
-                <button
-                  class="btn btn-primary btn-book"
-                  data-hotel="Luxury Hotel"
-                >
+                <button class="btn btn-primary btn-book" data-hotel="Luxury Hotel">
                   Book Now
                 </button>
               </div>
@@ -235,24 +228,17 @@
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
             <div class="package-item">
               <div class="overflow-hidden">
-                <img
-                  class="img-fluid"
-                  src="img/hotel2.jpg"
-                  alt="Business Hotel"
-                />
+                <img class="img-fluid" src="img/hotel2.jpg" alt="Business Hotel">
               </div>
               <div class="d-flex border-bottom">
                 <small class="flex-fill text-center border-end py-2"
-                  ><i class="fa fa-map-marker-alt text-primary me-2"></i
-                  >Mumbai</small
+                  ><i class="fa fa-map-marker-alt text-primary me-2"></i>Mumbai</small
                 >
                 <small class="flex-fill text-center border-end py-2"
-                  ><i class="fa fa-calendar-alt text-primary me-2"></i>4
-                  Star</small
+                  ><i class="fa fa-calendar-alt text-primary me-2"></i>4 Star</small
                 >
                 <small class="flex-fill text-center py-2"
-                  ><i class="fa fa-user text-primary me-2"></i>Conference
-                  Hall</small
+                  ><i class="fa fa-user text-primary me-2"></i>Conference Hall</small
                 >
               </div>
               <div class="text-center p-4">
@@ -268,10 +254,7 @@
                   Perfect for business travelers with all the amenities you need
                   for productive stays.
                 </p>
-                <button
-                  class="btn btn-primary btn-book"
-                  data-hotel="Business Hotel"
-                >
+                <button class="btn btn-primary btn-book" data-hotel="Business Hotel">
                   Book Now
                 </button>
               </div>
@@ -282,24 +265,17 @@
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
             <div class="package-item">
               <div class="overflow-hidden">
-                <img
-                  class="img-fluid"
-                  src="img/hotel3.jpg"
-                  alt="Resort Hotel"
-                />
+                <img class="img-fluid" src="img/hotel3.jpg" alt="Resort Hotel">
               </div>
               <div class="d-flex border-bottom">
                 <small class="flex-fill text-center border-end py-2"
-                  ><i class="fa fa-map-marker-alt text-primary me-2"></i
-                  >Goa</small
+                  ><i class="fa fa-map-marker-alt text-primary me-2"></i>Goa</small
                 >
                 <small class="flex-fill text-center border-end py-2"
-                  ><i class="fa fa-calendar-alt text-primary me-2"></i>5
-                  Star</small
+                  ><i class="fa fa-calendar-alt text-primary me-2"></i>5 Star</small
                 >
                 <small class="flex-fill text-center py-2"
-                  ><i class="fa fa-user text-primary me-2"></i>Beach
-                  Access</small
+                  ><i class="fa fa-user text-primary me-2"></i>Beach Access</small
                 >
               </div>
               <div class="text-center p-4">
@@ -315,10 +291,7 @@
                   Relax and unwind in our beachfront resort with stunning ocean
                   views.
                 </p>
-                <button
-                  class="btn btn-primary btn-book"
-                  data-hotel="Resort Hotel"
-                >
+                <button class="btn btn-primary btn-book" data-hotel="Resort Hotel">
                   Book Now
                 </button>
               </div>
@@ -330,77 +303,40 @@
     <!-- Booking Section End -->
 
     <!-- Booking Modal -->
-    <div
-      class="modal fade"
-      id="bookingModal"
-      tabindex="-1"
-      aria-labelledby="bookingModalLabel"
-      aria-hidden="true"
-    >
+    <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="bookingModalLabel">
-              Hotel Booking Form
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
+            <h5 class="modal-title" id="bookingModalLabel">Hotel Booking Form</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
             <form id="bookingForm">
-              <input type="hidden" id="hotelName" name="hotelName" />
+              <input type="hidden" id="hotelName" name="hotelName">
 
               <h6 class="text-primary mb-3">Guest Information</h6>
               <div class="row g-3 mb-4">
                 <div class="col-md-6">
                   <div class="form-floating">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="fullName"
-                      placeholder="Your Name"
-                      required
-                    />
+                    <input type="text" class="form-control" id="fullName" placeholder="Your Name" required>
                     <label for="fullName">Full Name</label>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-floating">
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="email"
-                      placeholder="Your Email"
-                      required
-                    />
+                    <input type="email" class="form-control" id="email" placeholder="Your Email" required>
                     <label for="email">Email Address</label>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-floating">
-                    <input
-                      type="tel"
-                      class="form-control"
-                      id="phone"
-                      placeholder="Your Phone"
-                      required
-                    />
+                    <input type="tel" class="form-control" id="phone" placeholder="Your Phone" required>
                     <label for="phone">Phone Number</label>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-floating">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="address"
-                      placeholder="Your Address"
-                      required
-                    />
+                    <input type="text" class="form-control" id="address" placeholder="Your Address" required>
                     <label for="address">Address</label>
                   </div>
                 </div>
@@ -410,23 +346,13 @@
               <div class="row g-3 mb-4">
                 <div class="col-md-6">
                   <div class="form-floating">
-                    <input
-                      type="date"
-                      class="form-control"
-                      id="checkIn"
-                      required
-                    />
+                    <input type="date" class="form-control" id="checkIn" required>
                     <label for="checkIn">Check-in Date</label>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-floating">
-                    <input
-                      type="date"
-                      class="form-control"
-                      id="checkOut"
-                      required
-                    />
+                    <input type="date" class="form-control" id="checkOut" required>
                     <label for="checkOut">Check-out Date</label>
                   </div>
                 </div>
@@ -488,32 +414,18 @@
                       <option value="No">No</option>
                       <option value="Yes">Yes</option>
                     </select>
-                    <label for="airportTransfer"
-                      >Airport Transfer Needed?</label
-                    >
+                    <label for="airportTransfer">Airport Transfer Needed?</label>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-floating">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="flightNumber"
-                      placeholder="Flight Number"
-                    />
-                    <label for="flightNumber"
-                      >Flight Number (if applicable)</label
-                    >
+                    <input type="text" class="form-control" id="flightNumber" placeholder="Flight Number">
+                    <label for="flightNumber">Flight Number (if applicable)</label>
                   </div>
                 </div>
                 <div class="col-12">
                   <div class="form-floating">
-                    <textarea
-                      class="form-control"
-                      placeholder="Special Requests"
-                      id="specialRequests"
-                      style="height: 100px"
-                    ></textarea>
+                    <textarea class="form-control" placeholder="Special Requests" id="specialRequests" style="height: 100px"></textarea>
                     <label for="specialRequests">Special Requests</label>
                   </div>
                 </div>
@@ -534,79 +446,45 @@
                 </div>
                 <div class="col-md-6">
                   <div class="form-floating">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="cardNumber"
-                      placeholder="Card Number"
-                    />
+                    <input type="text" class="form-control" id="cardNumber" placeholder="Card Number">
                     <label for="cardNumber">Card Number</label>
                   </div>
                 </div>
                 <div class="col-md-4">
                   <div class="form-floating">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="cardExpiry"
-                      placeholder="MM/YY"
-                    />
+                    <input type="text" class="form-control" id="cardExpiry" placeholder="MM/YY">
                     <label for="cardExpiry">Expiry Date (MM/YY)</label>
                   </div>
                 </div>
                 <div class="col-md-4">
                   <div class="form-floating">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="cardCvv"
-                      placeholder="CVV"
-                    />
+                    <input type="text" class="form-control" id="cardCvv" placeholder="CVV">
                     <label for="cardCvv">CVV</label>
                   </div>
                 </div>
                 <div class="col-md-4">
                   <div class="form-floating">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="cardName"
-                      placeholder="Cardholder Name"
-                    />
+                    <input type="text" class="form-control" id="cardName" placeholder="Cardholder Name">
                     <label for="cardName">Cardholder Name</label>
                   </div>
                 </div>
               </div>
 
               <div class="form-check mb-4">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  id="terms"
-                  required
-                />
+                <input class="form-check-input" type="checkbox" id="terms" required>
                 <label class="form-check-label" for="terms">
                   I agree to the Terms and Conditions
                 </label>
               </div>
               <div class="form-check mb-4">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  id="privacy"
-                  required
-                />
+                <input class="form-check-input" type="checkbox" id="privacy" required>
                 <label class="form-check-label" for="privacy">
                   I accept the Privacy Policy
                 </label>
               </div>
 
               <div class="modal-footer">
-                <button
-                  type="button"
-                  class="btn btn-secondary"
-                  data-bs-dismiss="modal"
-                >
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
                   Close
                 </button>
                 <button type="submit" class="btn btn-primary">
@@ -618,8 +496,6 @@
         </div>
       </div>
     </div>
-
-    <!-- NEW SCTION END -->
 
     <!-- Footer Start -->
     <div
@@ -737,8 +613,6 @@
             <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
               &copy; <a class="border-bottom" href="#">Marigold Holidays</a>,
               All Right Reserved.
-
-              <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
               Designed By
               <a class="border-bottom" href="https://htmlcodex.com"
                 >GPT Softwares</a
@@ -776,129 +650,59 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-    <!-- Add this before </head> -->
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-    <script>
-      // Initialize EmailJS with your User ID
-      (function () {
-        emailjs.init("7cW47dMGOtOw8QFIv"); // Replace with your actual EmailJS user ID
-      })();
-    </script>
 
-    <script>
-      // Initialize booking modal
-      document.addEventListener("DOMContentLoaded", function () {
-        const bookingButtons = document.querySelectorAll(".btn-book");
-
-        bookingButtons.forEach((button) => {
-          button.addEventListener("click", function () {
-            const hotelName = this.getAttribute("data-hotel");
-            document.getElementById("hotelName").value = hotelName;
-            document.getElementById(
-              "bookingModalLabel"
-            ).textContent = `Booking: ${hotelName}`;
-
-            const modal = new bootstrap.Modal(
-              document.getElementById("bookingModal")
-            );
-            modal.show();
-          });
-        });
-
-        // Form submission
-        document
-          .getElementById("bookingForm")
-          .addEventListener("submit", function (e) {
-            e.preventDefault();
-            // Here you would typically send the data to your server
-            alert(
-              "Booking submitted successfully! We will contact you shortly."
-            );
-            const modal = bootstrap.Modal.getInstance(
-              document.getElementById("bookingModal")
-            );
-            modal.hide();
-            this.reset();
-          });
-      });
-    </script>
     <script>
       // Initialize booking modal and EmailJS
-      document.addEventListener("DOMContentLoaded", function () {
+      document.addEventListener("DOMContentLoaded", function() {
         const bookingButtons = document.querySelectorAll(".btn-book");
-
-        bookingButtons.forEach((button) => {
-          button.addEventListener("click", function () {
+        
+        bookingButtons.forEach(button => {
+          button.addEventListener("click", function() {
             const hotelName = this.getAttribute("data-hotel");
             document.getElementById("hotelName").value = hotelName;
-            document.getElementById(
-              "bookingModalLabel"
-            ).textContent = `Booking: ${hotelName}`;
-
-            const modal = new bootstrap.Modal(
-              document.getElementById("bookingModal")
-            );
+            document.getElementById("bookingModalLabel").textContent = `Booking: ${hotelName}`;
+            
+            const modal = new bootstrap.Modal(document.getElementById("bookingModal"));
             modal.show();
           });
         });
 
         // Form submission with EmailJS
-        document
-          .getElementById("bookingForm")
-          .addEventListener("submit", function (e) {
-            e.preventDefault();
+        document.getElementById("bookingForm").addEventListener("submit", function(e) {
+          e.preventDefault();
+          
+          // Get form data
+          const formData = {
+            hotel_name: document.getElementById("hotelName").value,
+            full_name: document.getElementById("fullName").value,
+            email: document.getElementById("email").value,
+            phone: document.getElementById("phone").value,
+            address: document.getElementById("address").value,
+            check_in: document.getElementById("checkIn").value,
+            check_out: document.getElementById("checkOut").value,
+            adults: document.getElementById("adults").value,
+            children: document.getElementById("children").value,
+            rooms: document.getElementById("rooms").value,
+            room_type: document.getElementById("roomType").value,
+            airport_transfer: document.getElementById("airportTransfer").value,
+            flight_number: document.getElementById("flightNumber").value || "N/A",
+            special_requests: document.getElementById("specialRequests").value || "None",
+            payment_method: document.getElementById("paymentMethod").value,
+            last_4_digits: document.getElementById("cardNumber").value.slice(-4) // Only send last 4 digits
+          };
 
-            // Get form data
-            const formData = {
-              hotel_name: document.getElementById("hotelName").value,
-              full_name: document.getElementById("fullName").value,
-              email: document.getElementById("email").value,
-              phone: document.getElementById("phone").value,
-              address: document.getElementById("address").value,
-              check_in: document.getElementById("checkIn").value,
-              check_out: document.getElementById("checkOut").value,
-              adults: document.getElementById("adults").value,
-              children: document.getElementById("children").value,
-              rooms: document.getElementById("rooms").value,
-              room_type: document.getElementById("roomType").value,
-              airport_transfer:
-                document.getElementById("airportTransfer").value,
-              flight_number:
-                document.getElementById("flightNumber").value || "N/A",
-              special_requests:
-                document.getElementById("specialRequests").value || "None",
-              payment_method: document.getElementById("paymentMethod").value,
-              last_4_digits: document
-                .getElementById("cardNumber")
-                .value.slice(-4), // Only send last 4 digits
-            };
-
-            // Send email using EmailJS
-            emailjs
-              .send(
-                "service_cj4bqnf",
-                "template_behruq5",
-                formData
-              )
-              .then(
-                function (response) {
-                  alert(
-                    "Booking submitted successfully! We will contact you shortly."
-                  );
-                  const modal = bootstrap.Modal.getInstance(
-                    document.getElementById("bookingModal")
-                  );
-                  modal.hide();
-                  document.getElementById("bookingForm").reset();
-                },
-                function (error) {
-                  alert(
-                    "Failed to send booking request. Please try again or contact us directly."
-                  );
-                  console.error("EmailJS error:", error);
-                }
-              );
-          });
+          // Send email using EmailJS
+          emailjs.send("service_cj4bqnf", "template_behruq5", formData)
+            .then(function(response) {
+              alert("Booking submitted successfully! We will contact you shortly.");
+              const modal = bootstrap.Modal.getInstance(document.getElementById("bookingModal"));
+              modal.hide();
+              document.getElementById("bookingForm").reset();
+            }, function(error) {
+              alert("Failed to send booking request. Please try again or contact us directly.");
+              console.error("EmailJS error:", error);
+            });
+        });
       });
     </script>
   </body>
